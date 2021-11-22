@@ -1,0 +1,18 @@
+/* SLIDE */
+.main-slide {
+	display: grid;
+
+	grid-template-rows: 1fr 1fr;
+}
+
+/* HEADER */
+.main-slide__header {
+	align-self: end;
+}
+
+/* NOTE */
+.main-slide__note {
+	align-self: start;
+
+	font-size: 20px;
+}

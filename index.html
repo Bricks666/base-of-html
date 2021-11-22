@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Родись, верстай, верстай, верстай, сдохни</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			href="node_modules/@shower/ribbon/styles/styles.css"
+		/>
+		<link rel="stylesheet" href="Styles/styles.css" />
+	</head>
+	<body class="shower list">
+		<section class="slide main-slide">
+			<h2 class="main-slide__header">Текст, картинки, пара ссылок</h2>
+			<p class="note main-slide__note">Или как оформить контент</p>
+		</section>
+
+		<section class="slide">
+			<h2>Какой контент может быть на странице</h2>
+			<ul>
+				<li class="next">Текстовый</li>
+				<li class="next">Графический</li>
+				<li class="next"><del>Мультимедия</del></li>
+			</ul>
+		</section>
+
+		<section class="slide two-column">
+			<h2 class="two-column__header">
+				Тег <code>&lt;h...&gt;&lt;/h...&gt;</code>
+			</h2>
+			<pre class="pre">
+        <code><mark>&lt;h3&gt;Питерские крыши&lt;/h3&gt;</mark></code>
+        <code>&lt;p&gt;За окном — питерские крыши&lt;br&gt;</code>
+          <code>Серую хмарь протыкает шпиль&lt;br&gt;</code>
+          <code>Мы друг друга совсем не слышим&lt;br&gt;</code>
+          <code>Разговор шуршит, как фитиль...&lt;/p&gt;</code>
+      </pre>
+			<div class="example-block">
+				<h3 class="example-block__header"><mark>Питерские крыши</mark></h3>
+				<p class="example-block__paragraph">
+					За окном — питерские крыши<br />
+					Серую хмарь протыкает шпиль<br />
+					Мы друг друга совсем не слышим<br />
+					Разговор шуршит, как фитиль...
+				</p>
+			</div>
+		</section>
+
+		<section class="slide two-column">
+			<h2 class="two-column__header">Тег &lt;p&gt;&lt;/p&gt;</h2>
+			<pre class="pre">
+        <code>&lt;h3&gt;Дядя Володя&lt;/h3&gt;</code>
+        <code><mark>&lt;p&gt;	Дядя Володя, закрути нам гайки!&lt;br&gt;</mark></code>
+        <code><mark>Дядя Володя, гайки закрути!&lt;br&gt;</mark></code>
+        <code><mark>Дядя Володя, закрути нам гайки!&lt;br&gt;</mark></code>
+        <code><mark>Дядя Володя, гайки закрути!&lt;/p&gt;</mark></code>
+      </pre>
+			<div class="example-block">
+				<h3 class="example-block__header">Дядя Володя</h3>
+				<p class="example-block__paragraph">
+					<mark>
+						Дядя Володя, закрути нам гайки!<br />
+						Дядя Володя, гайки закрути!<br />
+						Дядя Володя, закрути нам гайки!<br />
+						Дядя Володя, гайки закрути!
+					</mark>
+				</p>
+			</div>
+			<img class="putin next next next" src="images/putin.jpg" alt="putin" />
+		</section>
+
+		<section class="slide two-column">
+			<h2 class="two-column__header">Тег &lt;span&gt;&lt;/span&gt;</h2>
+			<pre class="pre">
+        <code>&lt;h3&gt;Мелочь&lt;/h3&gt;</code>
+        <code>&lt;p&gt;Мелочь в кармане&lt;br&gt;</code>
+        <code>Значит, все в порядке&lt;br&gt;</code>
+        <code>На телефоне есть зарядка&lt;br&gt;</code>
+        <code>А мы в метро играем в прятки&lt;br&gt;</code>
+        <code><mark>&lt;span&gt;Всё по кругу&lt;/span&gt;</mark>&lt;/p&gt;</code>
+      </pre>
+			<div class="example-block">
+				<h3 class="example-block__header">Мелочь</h3>
+				<p class="example-block__paragraph">
+					Мелочь в кармане <br />
+					Значит, все в порядке<br />
+					На телефоне есть зарядка<br />
+					А мы в метро играем в прятки<br />
+					<span class="example-block__span">Всё по кругу</span>
+				</p>
+			</div>
+		</section>
+
+		<section class="slide two-column">
+			<h2 class="two-column__header">Тег &lt;br&gt;</h2>
+			<pre class="pre">
+        <code>&lt;h3&gt;Батареи&lt;/h3&gt;</code>
+        <code>&lt;p&gt;	Прокуренный голос,<mark>&lt;br&gt;</mark></code>
+        <code>Твои теплые губу.<mark>&lt;br&gt;</mark></code>
+        <code>Нам так нравится мерзнуть,<mark>&lt;br&gt;</mark></code>
+        <code>Нам не нравятся клубы&lt;/p&gt;</code>
+      </pre>
+			<div class="example-block">
+				<h3 class="example-block__header">Батареи</h3>
+				<p>
+					Прокуренный голос,<mark>&lt;br&gt;</mark><br />
+					Твои теплые губу.<mark>&lt;br&gt;</mark><br />
+					Нам так нравится мерзнуть,<mark>&lt;br&gt;</mark><br />
+					Нам не нравятся клубы
+				</p>
+			</div>
+		</section>
+
+		<section class="slide two-column">
+			<h2 class="two-column__header">
+				Теги &lt;i&gt;&lt;/i&gt; и &lt;em&gt;&lt;/em&gt;
+			</h2>
+			<pre class="pre">
+          <code>&lt;h3&gt;Семь дней до мегиддо&lt;/h3&gt;</code>
+          <code>&lt;p&gt;- <mark>&lt;i&gt;Почему ты подумала, <br>что я&lt;/i&gt; &lt;em&gt;серчер&lt;/em&gt;</mark>?<br> - спросил я&lt;br &gt;</code>
+          <code>- <mark>&lt;i&gt;Ну...&lt;/i&gt;</mark> - подумала она - <br> <mark>&lt;i&gt;У вас и без зеркалок взгляд<br> такой, ищущий...&lt;/i&gt;</mark></code>
+      </pre>
+			<div class="example-block">
+				<h3 class="example-block__header">Семь дней до мегиддо</h3>
+				<p>
+					- <mark><i>Почему ты подумала, что я</i> <em>серчер</em></mark
+					>? - спросил я<br />
+					- <mark><i>Ну...</i></mark> - подумала она -
+					<mark><i>У вас и без зеркалок взгляд такой, ищущий...</i></mark>
+				</p>
+			</div>
+		</section>
+
+		<section class="slide two-column">
+			<h2 class="two-column__header">
+				Теги &lt;b&gt;&lt;/b&gt; и &lt;strong&gt;&lt;/strong&gt;
+			</h2>
+			<pre class="pre">
+        <code>&lt;p&gt;</code>
+        <code>  <mark>&lt;b&gt;Игровая полочка&lt;/b&gt;</mark> - </code>
+        <code>  <mark>&lt;strong&gt;ваш лучший помощник&lt;/strong&gt;</mark></code>
+        <code>  для погружении в мир настольных игр.</code>
+				<code>  Будь вы новичек, только начинающий</code>
+				<code>  познавать все прелести игр с друзьям, </code>
+				<code>  или же вы уже прожженый </code>
+        <code>  обыватель миров Warhammer’а,</code>
+        <code>&lt;/p&gt;</code>
+      </pre>
+			<div class="example-block">
+				<p class="example-block__paragraph">
+					<mark><b>Игровая полочка</b></mark> -
+					<mark><strong>ваш лучший помощник</strong></mark> для погружении в мир
+					настольных игр. Будь вы новичек, только начинающий познавать все
+					прелести игр с друзьям, или же вы уже прожженый обыватель миров
+					Warhammer’а,
+				</p>
+			</div>
+		</section>
+
+		<section class="slide clear">
+			<img src="./images/mem1.jpg" class="cover w h" />
+			<span class="meme__text meme__text--b-i"
+				>&lt;b&gt;&lt;/b&gt; &lt;i&gt;&lt;/i&gt;</span
+			>
+			<span class="meme__text meme__text--em-strong"
+				>&lt;strong&gt;&lt;/strong&gt;&lt;em&gt;&lt;/em&gt;</span
+			>
+		</section>
+		<section class="slide two-column">
+			<h2 class="two-column__header">
+				Тег &lt;ul&gt;&lt;/ul&gt;, &lt;ol&gt;&lt;/ol&gt;, &lt;li&gt;&lt;/li&gt;
+			</h2>
+			<pre class="pre">
+        <code>&lt;h3&gt;Места работы&lt;/h3&gt;</code>
+        <code><mark>&lt;ol&gt;</mark></code>
+        <code><mark>  &lt;li&gt;&lt;del&gt;Картонка&lt;/del&gt;&lt;/li&gt;</mark></code>
+        <code><mark>  &lt;li&gt;&lt;del&gt;Мама друга&lt;/del&gt;&lt;/li&gt;</mark></code>
+        <code><mark>  &lt;li&gt;Яндекс</mark></code>
+        <code><mark>    &lt;ul&gt;</mark></code>
+        <code><mark>      &lt;li&gt;Junior&lt;/li&gt;</mark></code>
+        <code><mark>      &lt;li&gt;&lt;ins&gt;Middle&lt;/ins&gt;&lt;/li&gt;</mark></code>
+        <code><mark>    &lt;/ul&gt;</mark></code>
+        <code><mark>  &lt;/li&gt;</mark></code>
+        <code><mark>&lt;/ol&gt;</mark></code>
+      </pre>
+			<div class="example-block">
+				<h3 class="example-block__header">Места работы</h3>
+				<ol>
+					<li>
+						<mark><del>Картонка</del></mark>
+					</li>
+					<li>
+						<mark><del>Мама друга</del></mark>
+					</li>
+					<li>
+						<mark> Яндекс </mark>
+						<ul>
+							<li><mark>Junior</mark></li>
+							<li>
+								<mark><ins>Middle</ins></mark>
+							</li>
+						</ul>
+					</li>
+				</ol>
+			</div>
+		</section>
+
+		<section class="slide subpart">
+			<h2>Изображения</h2>
+		</section>
+
+		<section class="slide two-column">
+			<h2 class="two-column__header">Тег &lt;img&gt;</h2>
+			<pre class="pre">
+        <code>&lt;h3&gt;Первая фотосессия Кекса&lt;/h3&gt;</code>
+        <code><mark>&lt;img/&gt;</mark></code>
+      </pre>
+			<div class="example-block">
+				<h3 class="example-block__header">Первая фотосессия Кекса</h3>
+				<img class="example-block__img" />
+			</div>
+		</section>
+
+		<section class="slide two-column">
+			<h2 class="two-column__header">Тег &lt;img&gt;</h2>
+			<pre class="pre">
+        <code>&lt;h3&gt;Первая фотосессия Кекса&lt;/h3&gt;</code>
+        <code>&lt;img <mark>src="/images/keksby.jpg"</mark>/&gt;</code>
+      </pre>
+			<div class="example-block">
+				<h3 class="example-block__header">Первая фотосессия Кекса</h3>
+				<img class="example-block__img" src="images/keksby.jpg" />
+			</div>
+		</section>
+
+		<section class="slide two-column">
+			<h2 class="two-column__header">Тег &lt;img&gt;</h2>
+			<pre class="pre">
+        <code>&lt;h3&gt;Первая фотосессия Кекса&lt;/h3&gt;</code>
+        <code>&lt;img src="/images/keksby.jpg"</code>
+        <code><mark>alt="Фото кота Кекса в молодости"</mark>/&gt;</code>
+      </pre>
+			<div class="example-block">
+				<h3 class="example-block__header">Первая фотосессия Кекса</h3>
+				<img
+					class="example-block__img"
+					src="images/keksby.jpg"
+					alt="Фото кота Кекса в молодости"
+				/>
+			</div>
+		</section>
+
+		<section class="slide two-column">
+			<h2 class="two-column__header">Тег &lt;img&gt;</h2>
+			<pre class="pre">
+        <code>&lt;h3&gt;Первая фотосессия Кекса&lt;/h3&gt;</code>
+        <code>&lt;img <mark class="important">src="/images/eksby.jpg"</mark></code>
+        <code>alt="Фото кота Кекса в молодости"/&gt;</code>
+      </pre>
+			<div class="example-block">
+				<h3 class="example-block__header">Первая фотосессия Кекса</h3>
+				<img
+					class="example-block__img"
+					src="images/eksby.jpg"
+					alt="Фото кота Кекса в молодости"
+				/>
+			</div>
+		</section>
+
+		<section class="slide two-column">
+			<h2 class="two-column__header">
+				Тег &lt;figure&gt;&lt;/figure&gt;,&lt;figcaption&gt;&lt;figcaption&gt;
+			</h2>
+			<pre class="pre">
+        <code><mark>&lt;figure&gt;</mark></code>
+        <code>  &lt;img</code>
+        <code>  src="images/alena-aenami.jpg"</code>
+        <code>  alt="Алена Аенами 'Потерянные между'"/&gt;</code>
+        <code>  <mark>&lt;figcaption&gt;</mark></code>
+        <code>  <mark>Alena Aenami "Lost In Between"</mark></code>
+        <code>  <mark>&lt;/figcaption&gt;</mark></code>
+        <code><mark>&lt;/figure&gt;</mark></code>
+      </pre>
+			<div class="example-block">
+				<figure class="example-block__figure">
+					<img
+						class="example-block__img"
+						src="images/alena-aenami.jpg"
+						alt="Алена Аенами 'Потерянные между'"
+					/>
+					<figcaption class="example-block__figcaption">
+						Alena Aenami "Lost In Between"
+					</figcaption>
+				</figure>
+			</div>
+		</section>
+
+		<section class="slide two-column">
+			<h2 class="two-column__header">
+				Тег &lt;figure&gt;&lt;/figure&gt;,&lt;figcaption&gt;&lt;figcaption&gt;
+			</h2>
+			<pre class="pre">
+        <code>&lt;figure&gt;</code>
+        <code>  &lt;img</code>
+        <code>  <mark class="important">src="images/alena-aen.jpg"</mark></code>
+        <code>  alt="Алена Аенами 'Потерянные между'"/&gt;</code>
+        <code>  &lt;figcaption&gt;</code>
+        <code>  Alena Aenami "Lost In Between"</code>
+        <code>  &lt;/figcaption&gt;</code>
+        <code>&lt;/figure&gt;</code>
+      </pre>
+			<div class="example-block">
+				<figure class="example-block__figure">
+					<img
+						class="example-block__img"
+						src="images/alena-aen.jpg"
+						alt="Алена Аенами 'Потерянные между'"
+					/>
+					<figcaption class="example-block__figcaption">
+						Alena Aenami "Lost In Between"
+					</figcaption>
+				</figure>
+			</div>
+		</section>
+
+		<section class="slide two-column">
+			<h2 class="two-column__header">
+				Тег &lt;figure&gt;&lt;/figure&gt;,&lt;figcaption&gt;&lt;figcaption&gt;
+			</h2>
+			<pre class="pre">
+        <code>&lt;img</code>
+        <code><mark class="important">src="images/al-aenami.jpg"</mark></code>
+        <code>alt="Алена Аенами 'Потерянные между'"/&gt;</code>
+        <code>&lt;p&gt;</code>
+        <code>Alena Aenami "Lost In Between"</code>
+        <code>&lt;/p&gt;</code>
+      </pre>
+			<div class="example-block">
+				<img
+					class="example-block__img"
+					src="images/al-aenami.jpg"
+					alt="Алена Аенами 'Потерянные между'"
+				/>
+				<figcaption class="example-block__figcaption">
+					Alena Aenami "Lost In Between"
+				</figcaption>
+			</div>
+		</section>
+
+		<section class="slide two-column">
+			<h2 class="two-column__header">Тег &lt;a&gt;&lt;/a&gt;</h2>
+			<pre class="pre">
+        <code>&lt;h3&gt;Девочка-деньги&lt;/h3&gt;</code>
+        <code>&lt;p&gt;</code>
+        <code>Только жди нас в первом ряду и по центру&lt;br&gt;</code>
+        <code>Делать нечего сзади&lt;br&gt;</code>
+        <code>Мерч и афиша концертов — на сайте:&lt;br&gt;</code>
+        <code><mark>&lt;a&gt;Anacondaz.ru&lt;/a&gt;</mark></code>
+        <code>&lt;/p&gt;</code>
+      </pre>
+			<div class="example-block">
+				<h3 class="example-block__header">Девочка-деньги</h3>
+				<p class="example-block__paragraph">
+					Только жди нас в первом ряду и по центру<br />
+					Делать нечего сзади<br />
+					Мерч и афиша концертов — на сайте:<br />
+					<mark><a class="example-block__a">Anacondaz.ru</a></mark>
+				</p>
+			</div>
+		</section>
+
+		<section class="slide two-column">
+			<h2 class="two-column__header">Тег &lt;a&gt;&lt;/a&gt;</h2>
+			<pre class="pre">
+        <code>&lt;h3&gt;Девочка-деньги&lt;/h3&gt;</code>
+        <code>&lt;p&gt;</code>
+        <code>Только жди нас в первом ряду и по центру&lt;br&gt;</code>
+        <code>Делать нечего сзади&lt;br&gt;</code>
+        <code>Мерч и афиша концертов — на сайте:&lt;br&gt;</code>
+        <code>&lt;a <mark>href="https://Anacondaz.ru"</mark>&gt;Anacondaz.ru&lt;/a&gt;</code>
+        <code>&lt;/p&gt;</code>
+      </pre>
+			<div class="example-block">
+				<h3 class="example-block__header">Девочка-деньги</h3>
+				<p class="example-block__paragraph">
+					Только жди нас в первом ряду и по центру<br />
+					Делать нечего сзади<br />
+					Мерч и афиша концертов — на сайте:<br />
+					<mark
+						><a class="example-block__a" href="https://Anacondaz.ru"
+							>Anacondaz.ru</a
+						></mark
+					>
+				</p>
+			</div>
+		</section>
+
+		<section class="slide two-column">
+			<h2 class="two-column__header">Тег &lt;a&gt;&lt;/a&gt;</h2>
+			<pre class="pre">
+        <code>&lt;h3&gt;Девочка-деньги&lt;/h3&gt;</code>
+        <code>&lt;p&gt;</code>
+        <code>Только жди нас в первом ряду и по центру&lt;br&gt;</code>
+        <code>Делать нечего сзади&lt;br&gt;</code>
+        <code>Мерч и афиша концертов — на сайте:&lt;br&gt;</code>
+        <code>&lt;a href="https://Anacondaz.ru"</code>
+        <code>  <mark>target="_blank"</mark>&gt;Anacondaz.ru&lt;/a&gt;</code>
+        <code>&lt;/p&gt;</code>
+      </pre>
+			<div class="example-block">
+				<h3 class="example-block__header">Девочка-деньги</h3>
+				<p class="example-block__paragraph">
+					Только жди нас в первом ряду и по центру<br />
+					Делать нечего сзади<br />
+					Мерч и афиша концертов — на сайте:<br />
+					<mark
+						><a
+							class="example-block__a"
+							href="https://Anacondaz.ru"
+							target="_blank"
+							>Anacondaz.ru</a
+						></mark
+					>
+				</p>
+			</div>
+		</section>
+
+		<section class="slide">
+			<h2>Тег &lt;a&gt;&lt;/a&gt;</h2>
+			<pre class="pre">
+        <code>&lt;header <mark>id="top"</mark>&gt;</code>
+        <code>  &lt;h1&gt;...&lt;/h1&gt;</code>
+        <code>  &lt;p&gt;...&lt;/p&gt;</code>
+        <code>  &lt;a <mark>href="#buy"</mark>&gt;...&lt;/a&gt;</code>
+        <code>&lt;/header&gt;</code>
+        <code>  &lt;!-- Некоторый код страницы --&gt;</code>
+        <code>  &lt;div <mark>id="buy"</mark>&gt;</code>
+        <code>    &lt;h2&gt;...&lt;/h2&gt;</code>
+        <code>    &lt;p&gt;...&lt;/p&gt;</code>
+        <code>    &lt;a <mark>href="#top"</mark>&gt;...&lt;/a&gt;</code>
+        <code>  &lt;/div&gt;</code>
+      </pre>
+		</section>
+
+		<section class="slide">
+			<h2>Тег &lt;a&gt;&lt;/a&gt;</h2>
+			<object class="object" data="./inner/index.html">
+				<mark class="important">Что то пошло не так</mark>
+			</object>
+		</section>
+
+		<section class="slide">
+			<h2>Где можно почитать подробнее</h2>
+			<ul>
+				<li><a href="https://doka.guide">Doka Guide</a></li>
+				<li>
+					<a href="https://developer.mozilla.org/ru/"
+						>Mozzila Developer Network</a
+					>
+				</li>
+				<li><a href="https://webref.ru">Webref</a></li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<h2 class="shout">Ссылка</h2>
+		</section>
+
+		<section class="slide">
+			<h2 class="">Спасибо за внимание</h2>
+		</section>
+
+		<div class="progress"></div>
+
+		<script src="shower/shower.js"></script>
+	</body>
+</html>
