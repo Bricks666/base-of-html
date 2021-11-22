@@ -1,0 +1,51 @@
+.example-block {
+}
+
+.example-block__header {
+	margin: 0;
+}
+
+.example-block__paragraph {
+	font-size: 20px;
+}
+
+.example-block__span {
+	display: inline-block;
+
+	padding: 0 5px;
+
+	border-radius: 15px;
+
+	background-color: tomato;
+	color: white;
+}
+
+.example-block__img {
+	--height-img: min(240px);
+	width: calc(var(--height-img) / 9 * 16);
+	height: var(--height-img);
+
+	font-size: 20px;
+	text-align: center;
+
+	object-fit: cover;
+	object-position: top;
+}
+
+.example-block__figure {
+	display: grid;
+
+	width: max-content;
+}
+
+.example-block__figcaption {
+	align-self: start;
+	justify-self: end;
+
+	font-size: 18px;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.example-block__a {
+}
