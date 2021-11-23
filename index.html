@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link
 			rel="stylesheet"
-			href="shower/themes/ribbon/styles/styles.css"
+			href="node_modules/@shower/ribbon/styles/styles.css"
 		/>
 		<link rel="stylesheet" href="Styles/styles.css" />
 	</head>
@@ -17,13 +17,20 @@
 			<img src="images/begin.jpg" class="next cover w h" style="left: 62%" />
 		</section>
 
-		<section class="slide">
-			<h2>Какой контент может быть на странице</h2>
+		<section class="slide two-column">
+			<h2 class="two-column__header">Какой контент может быть на странице</h2>
 			<ul>
 				<li class="next">Текстовый</li>
 				<li class="next">Графический</li>
-				<li class="next"><del>Мультимедия</del></li>
+				<li class="next">
+					<span class="multimedia">Мультимедия</span
+					><del class="next del">Мультимедия</del>
+				</li>
 			</ul>
+			<figure class="next multimedia-illustration">
+				<img class="image" src="images/multimedia.jpg" />
+        <figcaption class="multimedia-illustration__figcaption">multimedia</figcaption>
+			</figure>
 		</section>
 
 		<section class="slide two-column">
@@ -457,7 +464,7 @@
 		</section>
 
 		<section class="slide clear">
-      <h2>Пару слов о семантике</h2>
+			<h2>Пару слов о семантике</h2>
 			<img class="image next" src="images/semantic.jpg" />
 		</section>
 

@@ -84,7 +84,7 @@
 }
 
 .image {
-  display: block;
+	display: block;
 
 	justify-self: center;
 
@@ -93,4 +93,29 @@
 	width: min(380px, 100%);
 
 	object-fit: cover;
+}
+
+.next.visited .multimedia {
+	display: none;
+}
+
+.next:not(.visited) .next.del {
+	display: none;
+}
+
+.multimedia-illustration {
+	position: relative;
+}
+
+.multimedia-illustration__figcaption {
+	position: absolute;
+
+	top: 35%;
+	left: 10%;
+
+	color: white;
+	font-weight: 700;
+	font-size: 24px;
+
+  transform: rotate(-25deg);
 }
