@@ -6,15 +6,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link
 			rel="stylesheet"
-			href="shower/themes/ribbon/styles/styles.css"
+			href="node_modules/@shower/ribbon/styles/styles.css"
 		/>
 		<link rel="stylesheet" href="Styles/styles.css" />
 	</head>
 	<body class="shower list">
-		<section class="slide main-slide clear">
+		<section class="slide main-slide">
 			<h2 class="main-slide__header">Текст, картинки, пара ссылок</h2>
 			<p class="note main-slide__note">Или как оформить контент</p>
-			<img src="images/begin.jpg" class="next cover w h" style="left: 62%;"/>
+			<img src="images/begin.jpg" class="next cover w h" style="left: 62%" />
 		</section>
 
 		<section class="slide">
@@ -113,6 +113,10 @@
 			</div>
 		</section>
 
+		<section class="slide">
+			<img class="cover" src="images/brbrbr.jpg" />
+		</section>
+
 		<section class="slide two-column">
 			<h2 class="two-column__header">
 				Теги &lt;i&gt;&lt;/i&gt; и &lt;em&gt;&lt;/em&gt;
@@ -209,16 +213,17 @@
 
 		<section class="slide subpart">
 			<h2>Изображения</h2>
+			<img class="cover" src="images/not-photo.jpg" />
 		</section>
 
 		<section class="slide two-column">
 			<h2 class="two-column__header">Тег &lt;img&gt;</h2>
 			<pre class="pre">
-        <code>&lt;h3&gt;Первая фотосессия Кекса&lt;/h3&gt;</code>
+        <code>&lt;h3&gt;Фото Кота-Кекса&lt;/h3&gt;</code>
         <code><mark>&lt;img/&gt;</mark></code>
       </pre>
 			<div class="example-block">
-				<h3 class="example-block__header">Первая фотосессия Кекса</h3>
+				<h3 class="example-block__header">Фото Кота-Кекса</h3>
 				<img class="example-block__img" />
 			</div>
 		</section>
@@ -226,11 +231,11 @@
 		<section class="slide two-column">
 			<h2 class="two-column__header">Тег &lt;img&gt;</h2>
 			<pre class="pre">
-        <code>&lt;h3&gt;Первая фотосессия Кекса&lt;/h3&gt;</code>
+        <code>&lt;h3&gt;Фото Кота-Кекса&lt;/h3&gt;</code>
         <code>&lt;img <mark>src="/images/keksby.jpg"</mark>/&gt;</code>
       </pre>
 			<div class="example-block">
-				<h3 class="example-block__header">Первая фотосессия Кекса</h3>
+				<h3 class="example-block__header">Фото Кота-Кекса</h3>
 				<img class="example-block__img" src="images/keksby.jpg" />
 			</div>
 		</section>
@@ -238,16 +243,16 @@
 		<section class="slide two-column">
 			<h2 class="two-column__header">Тег &lt;img&gt;</h2>
 			<pre class="pre">
-        <code>&lt;h3&gt;Первая фотосессия Кекса&lt;/h3&gt;</code>
+        <code>&lt;h3&gt;Фото Кота-Кекса&lt;/h3&gt;</code>
         <code>&lt;img src="/images/keksby.jpg"</code>
-        <code><mark>alt="Фото кота Кекса в молодости"</mark>/&gt;</code>
+        <code><mark>alt="Фото кекса за ноутбуком"</mark>/&gt;</code>
       </pre>
 			<div class="example-block">
-				<h3 class="example-block__header">Первая фотосессия Кекса</h3>
+				<h3 class="example-block__header">Фото Кота-Кекса</h3>
 				<img
 					class="example-block__img"
 					src="images/keksby.jpg"
-					alt="Фото кота Кекса в молодости"
+					alt="Фото кекса за ноутбуком"
 				/>
 			</div>
 		</section>
@@ -255,16 +260,16 @@
 		<section class="slide two-column">
 			<h2 class="two-column__header">Тег &lt;img&gt;</h2>
 			<pre class="pre">
-        <code>&lt;h3&gt;Первая фотосессия Кекса&lt;/h3&gt;</code>
+        <code>&lt;h3&gt;Фото Кота-Кекса&lt;/h3&gt;</code>
         <code>&lt;img <mark class="important">src="/images/eksby.jpg"</mark></code>
-        <code>alt="Фото кота Кекса в молодости"/&gt;</code>
+        <code>alt="Фото кекса за ноутбуком"/&gt;</code>
       </pre>
 			<div class="example-block">
-				<h3 class="example-block__header">Первая фотосессия Кекса</h3>
+				<h3 class="example-block__header">Фото Кота-Кекса</h3>
 				<img
 					class="example-block__img"
 					src="images/eksby.jpg"
-					alt="Фото кота Кекса в молодости"
+					alt="Фото кекса за ноутбуком"
 				/>
 			</div>
 		</section>
@@ -450,13 +455,14 @@
 				<mark class="important">Что то пошло не так</mark>
 			</object>
 		</section>
-		
+
 		<section class="slide clear">
-			<img class="cover w h" src="images/semantic.jpg" />
+      <h2>Пару слов о семантике</h2>
+			<img class="image next" src="images/semantic.jpg" />
 		</section>
 
-		<section class="slide">
-			<h2>Где можно почитать подробнее</h2>
+		<section class="slide two-column">
+			<h2 class="two-column__header">Где можно почитать подробнее</h2>
 			<ul>
 				<li><a href="https://doka.guide">Doka Guide</a></li>
 				<li>
@@ -466,19 +472,18 @@
 				</li>
 				<li><a href="https://webref.ru">Webref</a></li>
 			</ul>
-		</section>
-		
-		<section class="slide clear">
-			<img class="cover w h" src="images/imagination.jpg" />
+			<img class="image next" src="images/imagination.jpg" />
 		</section>
 
 		<section class="slide">
-			<h2 class="shout" style="font-size: 120px;"><a href="https://clck.ru/Yxpq5">https://clck.ru/Yxpq5</a></h2>
+			<h2 class="shout" style="font-size: 120px">
+				<a href="https://clck.ru/Yxpq5">https://clck.ru/Yxpq5</a>
+			</h2>
 		</section>
 
 		<section class="slide subpart clear">
-			<h2 style="color: white;">Спасибо за внимание</h2>
-			<img src="images/ded.jpg" class="cover w h " />
+			<h2 style="color: white">Спасибо за внимание</h2>
+			<img src="images/ded.jpg" class="cover w h" />
 		</section>
 
 		<div class="progress"></div>

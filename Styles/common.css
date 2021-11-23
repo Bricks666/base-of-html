@@ -29,6 +29,7 @@
 	height: 380px;
 
 	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 @keyframes show-putin {
@@ -79,5 +80,17 @@
 	top: 25%;
 	left: 20%;
 
-  font-size: 20px;
+	font-size: 20px;
+}
+
+.image {
+  display: block;
+
+	justify-self: center;
+
+	margin: 0 auto;
+
+	width: min(380px, 100%);
+
+	object-fit: cover;
 }
